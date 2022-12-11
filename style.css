@@ -1,0 +1,155 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(black, rgba(0, 0, 0, 0.5)),
+    url("images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; */
+}
+
+/* Space Invaders Game */
+.infoContainer {
+  width: 450px;
+  color: white;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#resultDisplay {
+  margin-bottom: 20px;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
+
+.scoresh2 {
+  color: antiquewhite;
+  font-size: 1.2rem;
+}
+
+.infoContainer {
+  margin: 10px 0;
+}
+
+.speedSec {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#increaseSpeed,
+#decreaseSpeed {
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(30, 30, 30);
+  background-color: antiquewhite;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  transition: all 0.1s;
+}
+
+#increaseSpeed:hover,
+#decreaseSpeed:hover {
+  color: gray;
+}
+
+#increaseSpeed:active,
+#decreaseSpeed:active {
+  box-shadow: 0 0 5px antiquewhite;
+}
+
+.speedSec h2 {
+  margin: 0 10px;
+  font-size: 1rem;
+  color: antiquewhite;
+}
+
+#startBtn {
+  padding: 3px 20px;
+  background-color: antiquewhite;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+#startBtn:hover {
+  color: gray;
+}
+
+#startBtn:active {
+  box-shadow: 0 0 5px antiquewhite;
+}
+
+#parent {
+  width: 450px;
+  height: 450px;
+  margin: 0 auto;
+  border: 3px ridge rgb(100, 100, 100);
+  background: url("images/space.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.squares {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.shooter {
+  background: url("images/shooter.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shots {
+  background: url("images/fire.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.invader {
+  border-radius: 50%;
+  background: url("images/invader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loss {
+  background: url("images/killed.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.deleted {
+  background-color: transparent;
+}
