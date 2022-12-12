@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // || C O N T R O L L E R:
   createShooter();
   createInvaders();
+  informing();
 
   startBtn.addEventListener("click", () => {
     if (!gameStart && !finished) {
@@ -93,6 +94,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function createShooter() {
     allSquares[217].classList.add("shooter");
+  }
+
+  function informing() {
+    alert("Use 's' - letter for SHOOTING!\nUse 'Arrows' - signs for MOVING shooter!")
   }
 
   // || V I E W:
